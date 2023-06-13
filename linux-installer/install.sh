@@ -31,7 +31,7 @@ sudo apt-get -y install rsyslog
 # TODO: update so it checks for the directory this file is in
 ! [ -e ./commands.conf ] && echo "Cant find ./commands.conf are you running this from the linux installer directory?" && exit 1
 
-cp ./commands.conf $syslogconfpath
+sudo cp ./commands.conf $syslogconfpath
 
 sudo ln -s /run/systemd/journal/dev-log /dev/log
 
